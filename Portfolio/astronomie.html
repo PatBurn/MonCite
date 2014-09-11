@@ -30,16 +30,7 @@ Patric Brunelle Web Design may change these terms and conditions at any time wit
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-        <div class="btn-group" data-toggle="buttons">
-          <label class="btn btn-success btn-lg">
-            <i class="glyphicon glyphicon-leaf"></i>
-            <input id="borderless-checkbox" type="checkbox"> Borderless
-          </label>
-          <label class="btn btn-primary btn-lg">
-            <i class="glyphicon glyphicon-fullscreen"></i>
-            <input id="fullscreen-checkbox" type="checkbox"> Fullscreen
-          </label>
-        </div>
+    
     <title>Patrick Brunelle</title>
 
     <link href="../css/bootstrap.css" rel="stylesheet">
@@ -53,6 +44,9 @@ Patric Brunelle Web Design may change these terms and conditions at any time wit
 	color: #3376FF;
 }
     </style>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
   </head>
 
   <body>
@@ -82,7 +76,40 @@ Patric Brunelle Web Design may change these terms and conditions at any time wit
 
     </div>
     <!-- /Full Page Image Header Area -->
-  
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <!-- The container for the modal slides -->
+      <div class="slides"></div>
+        <!-- Controls for the borderless lightbox -->
+      <h3 class="title"></h3>
+      <a class="prev">‹</a>
+      <a class="next">›</a>
+      <a class="close">×</a>
+      <a class="play-pause"></a>
+      <ol class="indicator"></ol>
+        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body next"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="btn btn-primary next">
+                            Next
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- /Intro -->
     <div class="call-to-action">
@@ -116,10 +143,11 @@ Patric Brunelle Web Design may change these terms and conditions at any time wit
         <!-- /.row -->
 
         <!-- Projects Row -->
+        <div id="links">
         <div class="row">
             <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="Gallerie/m51.jpg" alt="">
+                <a href="../images/m51.jpg" title="Galaxie M51" data-gallery>
+                    <img class="img-responsive" src="../images/m51.jpg" alt="Galaxie M51">
                 </a>
                 <h3>
                     <a href="#">Galaxie M51</a>
@@ -127,8 +155,8 @@ Patric Brunelle Web Design may change these terms and conditions at any time wit
                 <p>M51, aussi connue comme la galaxie du Tourbillon (Whirlpool Galaxy en anglais) est un couple de galaxies, à environ 8,4 Mpc (∼27,4 millions d' a.l.) de la Terre.</p>
             </div>
             <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="Gallerie/hercule.jpg" alt="">
+                <a href="../images/hercule.jpg" title="Amas globulaire M13" data-gallery>
+                    <img class="img-responsive" src="../images/hercule.jpg" alt="Amas globulaire M13">
                 </a>
                 <h3>
                     <a href="#">Amas globulaire M13</a>
@@ -136,8 +164,8 @@ Patric Brunelle Web Design may change these terms and conditions at any time wit
                 <p>L'amas globulaire M13 ou Messier 13, très souvent appelé le Grand Amas d'Hercule ou simplement Hercule, est parmi les objets les plus imposants du catalogue Messier.</p>
             </div>
             <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="Gallerie/orion.jpg" alt="">
+                <a href="../images/orion.jpg" title="Nébuleuse Orion M42" data-gallery>
+                    <img class="img-responsive" src="../images/orion.jpg" alt="Nébuleuse Orion M42">
                 </a>
                 <h3>
                     <a href="#">Nébuleuse Orion M42</a>
@@ -150,8 +178,8 @@ Patric Brunelle Web Design may change these terms and conditions at any time wit
         <!-- Projects Row -->
         <div class="row">
             <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="Gallerie/eskimo.jpg" alt="">
+                <a href="../images/eskimo.jpg" title="Nébuleuse de l’Esquimau" data-gallery>
+                    <img class="img-responsive" src="../images/eskimo.jpg" alt="Nébuleuse de l’Esquimau">
                 </a>
                 <h3>
                     <a href="#">Nébuleuse de l’Esquimau (NGC 2392)</a>
@@ -159,8 +187,8 @@ Patric Brunelle Web Design may change these terms and conditions at any time wit
                 <p>La nébuleuse du Clown (ou encore nébuleuse de l’Esquimau, NGC 2392) est une nébuleuse planétaire située dans la constellation des Gémeaux à 3750 années-lumière (1150 parsecs1) de la Terre.</p>
             </div>
             <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="Gallerie/jupiter.jpg" alt="">
+                <a href="../images/jupiter.jpg" title="Jupiter" data-gallery>
+                    <img class="img-responsive" src="../images/jupiter.jpg" alt="Jupiter">
                 </a>
                 <h3>
                     <a href="#">Jupiter</a>
@@ -168,8 +196,8 @@ Patric Brunelle Web Design may change these terms and conditions at any time wit
                 <p>Jupiter est une planète géante gazeuse. Il s'agit de la plus grosse planète du Système solaire.</p>
             </div>
             <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="Gallerie/Saturn.jpg" alt="">
+                <a href="../images/Saturn.jpg" title="Saturn" data-gallery>
+                    <img class="img-responsive" src="../images/Saturn.jpg" alt="Saturn">
                 </a>
                 <h3>
                     <a href="#">Saturn</a>
@@ -181,8 +209,8 @@ Patric Brunelle Web Design may change these terms and conditions at any time wit
         <!-- Projects Row -->
         <div class="row">
             <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="Gallerie/saturn-moon.jpg" alt="">
+                <a href="../images/saturn-moon.jpg" title="Lunes de saturn" data-gallery>
+                    <img class="img-responsive" src="../images/saturn-moon.jpg" alt="Lunes de saturn">
                 </a>
                 <h3>
                     <a href="#">Lunes de saturn</a>
@@ -190,8 +218,8 @@ Patric Brunelle Web Design may change these terms and conditions at any time wit
                 <p>Exposition ajuster pour visualiser les lunes de saturn.</p>
             </div>
             <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="Gallerie/star2.jpg" alt="">
+                <a href="../images/star2.jpg" title="Betelgeuse" data-gallery>
+                    <img class="img-responsive" src="../images/star2.jpg" alt="Betelgeuse">
                 </a>
                 <h3>
                     <a href="#">Betelgeuse</a>
@@ -199,14 +227,15 @@ Patric Brunelle Web Design may change these terms and conditions at any time wit
                 <p>Bételgeuse (α Orionis) est une étoile variable semi-régulière de type supergéante rouge, dans la constellation d’Orion.</p>
             </div>
             <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="Gallerie/star1.jpg" alt="">
+                <a href="../images/star1.jpg" title="Véga" data-gallery>
+                    <img class="img-responsive" src="../images/star1.jpg" alt="Véga">
                 </a>
                 <h3>
                     <a href="#">Véga</a>
                 </h3>
                 <p>Véga, également appelée Alpha Lyrae (α Lyrae / α Lyr) selon la désignation de Bayer, est l'étoile la plus brillante de la constellation de la Lyre.</p>
             </div>
+        </div>
         </div>
         <!-- /.row -->
 
@@ -292,5 +321,7 @@ Patric Brunelle Web Design may change these terms and conditions at any time wit
     <script src="../js/main.js"></script>
 
   </body>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
 </html>
