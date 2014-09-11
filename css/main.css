@@ -260,6 +260,20 @@ i.service-icon {
 	-o-background-size: cover;
 	background-size: cover;
 }
+.calloutElec2 {
+	color: #ffffff;
+	display: table;
+	height: 400px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center fixed;
+	background-image: url(../img/Mx32-Dev.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 .calloutElec {
 	color: #ffffff;
 	display: table;
