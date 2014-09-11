@@ -16,6 +16,11 @@ body {
 	text-align: center;
 	padding-top: 10%;
 }
+.vert-textElec {
+	display: table-cell;
+	text-align: center;
+	padding-top: 10%;
+}
 .vert-text h1 {
   padding: 0;
   margin: 0;
@@ -23,6 +28,12 @@ body {
   font-weight: 300;
 }
 .vert-textAuto h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 4em;
+  font-weight: 300;
+}
+.vert-textElec h1 {
   padding: 0;
   margin: 0;
   font-size: 4em;
@@ -167,6 +178,18 @@ body {
 	background-image: url(../img/LabteckLogo.jpg);
 }
 
+.headerElec {
+	display: table;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background: url(../img/Mx32-Dev.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-image: url(../img/Mx32-Dev.jpg);
+}
 /* Intro */
 
 .intro {
