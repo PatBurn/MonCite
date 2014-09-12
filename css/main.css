@@ -425,3 +425,22 @@ i.scroll:hover {
 	filter: alpha(opacity=50);
 	z-index: -1;
 }
+.maskBath{
+	float: right;
+  margin: 0 0 1em 1em;
+}
+.maskBath2{
+	overflow: auto;
+  zoom: 1;
+}
+.maskBathTittle .maskBath{
+	position: relative;
+	right: 0px;
+	top: -0;
+}
+.maskBathDesc {
+	width: auto;
+	position: absolute;
+	left:100%;
+	top  :0;
+}
